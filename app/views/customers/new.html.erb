@@ -4,14 +4,10 @@
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(@customer, url: signup_path) do |f| %>
       <%= render 'shared/error_messages' %>
-      <%= f.label :username %>
-      <%= f.text_field :username, class: 'form-control' %>
-      <%= f.label :email %>
-      <%= f.email_field :email, class: 'form-control'%>
-      <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control' %>
-      <%= f.label :password_confirmation, "Confirmation" %>
-      <%= f.password_field :password_confirmation, class: 'form-control' %>
+      <%= f.text_field :username, class: 'form-control', placeholder: 'name' %>
+      <%= f.email_field :email, class: 'form-control', placeholder: 'email' %>
+      <%= f.password_field :password, class: 'form-control', placeholder: 'password' %>
+      <%= f.password_field :password_confirmation, class: 'form-control', placeholder: 'confirm' %>
       <%= f.submit "Submit", class: "btn btn-primary" %>
     <% end %>
   </div>
