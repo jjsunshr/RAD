@@ -1,29 +1,26 @@
-<nav class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <nav>
-      <ul class="nav navbar-nav navbar-left">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Kids</a></li>
-            <li><a href="#">New-ins</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Saved</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Help & Support</a></li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <!--
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About", static_pages_about_url %></li>
-        -->
-        <li><a href="#"><span class="glyphicon glyphicon-folder-close"></span></a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-      </ul>
-    </nav>
-  </div>
+<nav class="navbar navbar-fixed-top navbar-dark bg-dark">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="fa fa-bars"></span>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Men</a>
+        <a class="dropdown-item" href="#">Women</a>
+        <a class="dropdown-item" href="#">Kids</a>
+        <a class="dropdown-item" href="#">New-ins</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Saved</a>
+        <a class="dropdown-item" href="#">Help & Support</a>
+      </div>
+    </li>
+  </ul>
+  <ul class="navbar-nav flex-row">
+    <li class="nav-item ml-2">
+      <a class="nav-link" href="#"><span class="fa fa-dropbox"></span></a>
+    </li>
+    <li class="nav-item ml-2">
+      <a class="nav-link" href="#"><span class="fa fa-search"></span></a>
+    </li>
+  </ul>
 </nav>

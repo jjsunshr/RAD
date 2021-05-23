@@ -8,4 +8,5 @@ Rails.application.routes.draw do
 
   get '/signup', to: 'customers#new'
   post '/signup', to: 'customers#create'
+  get '/add_to_list', to: 'static_pages#add'
 end

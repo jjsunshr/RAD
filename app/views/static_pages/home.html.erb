@@ -1,2 +1,87 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<center>
+  <h1>Home</h1>
+</center>
+
+<div class="card text-right bg-dark text-black">
+  <img src=<%= @item.item_image %> class="card-img">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Info</h5>
+    <p class="card-text">Discription bla. bla.</p>
+    <p class="card-text">Last updated 3 mins ago</p>
+    <a class="btn btn-primary" href=<%= "add_to_list?id=" + @item.item_id %>><span class="fa fa-plus"></span></a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <h3>Popular</h3>
+  </div>
+  <div class="col text-right">
+    <p><a href="#">See all +</a></p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col card">
+    <img class="card-img-top" src="images/0001.jpg">
+  </div>
+  <div class="col card">
+    <img class="card-img-top" src="images/0002.jpg">
+  </div>
+  <div class="col card">
+    <img class="card-img-top" src="images/0003.jpg">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <p>Info 1</p>
+  </div>
+  <div class="col">
+    <p>Info 2</p>
+  </div>
+  <div class="col">
+    <p>Info 3</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <h3>Collections</h3>
+  </div>
+  <div class="col text-right">
+    <p><a href="#">See all +</a></p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 bg-light">
+    <h3 class="display-5">Women</h3>
+  </div>
+  <div class="col-6">
+    <div class="bg-light">
+      <h3 class="display-5">Men</h3>
+    </div>
+    <div class="bg-light">
+      <h3 class="display-5">Kids</h3>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="bg-light">
+      <h3 class="display-5">New-ins</h3>
+    </div>
+  </div>
+</div>
+
+<div class="card" style="border: 0px">
+  <div class="card-block">
+    <h4 class="card-title">Newsletter</h4>
+    <p class="card-text">signup with our newsletter ...</p>
+    <form class="form form-inline">
+      <div class="input-group">
+        <input type="text" class="form-control">
+        <a href="#" class="btn btn-primary"><span class="fa fa-paper-plane"></span></a>
+      </div>
+    </form>
+  </div>
+</div>
